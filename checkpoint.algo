@@ -5,7 +5,7 @@ VAR
     str : STRING ;// Declare a string 
 BEGIN
     Read(str); 
-    FOR i FROM 0 TO str length-1  DO
+    FOR i FROM 0 TO str.length-1  DO
         // check the number of words in the sentence
         IF ((str[i]:=" ") OR (str[i]:=".")) THEN
         nbWords := nbWords+1;
@@ -16,7 +16,7 @@ BEGIN
         END_IF
     END_FOR
     //calculate the number of char in the sentence
-    sumChar:= str length - nbWords;
+    sumChar:= str.length - nbWords;
 
     Write(sumChar); // return number of character 
     Write(nbWords); // return number of words in the sentence 
