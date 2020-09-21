@@ -1,6 +1,7 @@
 ALGORITHM Checkpoint_Algo 
 VAR
     nbWords,sumChar,nbVowels :INTEGER :=0; // 3 varibales as a counter 
+    i:INTEGER;
     str : STRING := "i love world wide web."; // Declare a string 
 BEGIN
     FOR i FROM 0 TO str length-1  DO
