@@ -2,8 +2,9 @@ ALGORITHM Checkpoint_Algo
 VAR
     nbWords,sumChar,nbVowels :INTEGER :=0; // 3 varibales as a counter 
     i:INTEGER;
-    str : STRING := "i love world wide web."; // Declare a string 
+    str : STRING ;// Declare a string 
 BEGIN
+    Read(str); 
     FOR i FROM 0 TO str length-1  DO
         // check the number of words in the sentence
         IF ((str[i]:=" ") OR (str[i]:=".")) THEN
@@ -17,7 +18,7 @@ BEGIN
     //calculate the number of char in the sentence
     sumChar:= str length - nbWords;
 
-    Write(sumChar); // return number of character = 17 char
-    Write(nbWords); // return number of words in the sentence = 5 words 
-    Write(nbVowels;)// return number of vowels in the sentence = 7 vowels
+    Write(sumChar); // return number of character 
+    Write(nbWords); // return number of words in the sentence 
+    Write(nbVowels;)// return number of vowels in the sentence 
 END
